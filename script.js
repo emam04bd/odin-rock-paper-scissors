@@ -1,5 +1,6 @@
 function getPlayerChoice() {
-  return prompt();
+  // take and returns user input
+  return prompt("Enter rock, paper or scissors: ");
 }
 
 function getBotChoice() {
