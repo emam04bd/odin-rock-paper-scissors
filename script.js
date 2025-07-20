@@ -16,11 +16,21 @@ function getBotChoice() {
   return choice;
 }
 
-// function playRound()
-//   take user input 
-//   show computer choice
-//   show result
-//   return result
+function playRound() {
+  // calc, show & return result
+  const playerChoice = getPlayerChoice().toLocaleLowerCase();
+  const botChoice = getBotChoice();
+  let winner;
+  if(playerChoice === botChoice) 
+    winner = "none";
+  else if((playerChoice == "rock" && botChoice == "paper") || (playerChoice == "paper" && botChoice == "scissors") || (playerChoice == "scissors" && botChoice == "rock"))
+    winner = "bot";
+  else
+    winner = "player";
+  console.log("Winner: " + winner);
+  return winner;
+}
+  
 
 // playGame()
 //   play 5 rounds
