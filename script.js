@@ -1,5 +1,6 @@
-// function getPlayerChoice()
-//   return player input
+function getPlayerChoice() {
+  return prompt();
+}
 
 // function getBotChoice()
 //   return random choice
