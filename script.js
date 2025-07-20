@@ -4,6 +4,7 @@ function getPlayerChoice() {
 }
 
 function getBotChoice() {
+  // return a random choice among rock, paper, scissors
   let random = Math.floor(Math.random() * 3);
   let choice;
   if(random == 0)
